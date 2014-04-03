@@ -33,7 +33,7 @@
           (lambda ()
             (define-key projectile-mode-map (kbd "C-c p M-m") 'kmt/projectile-shell)
             (define-key projectile-mode-map (kbd "C-c p M-s") 'kmt/projectile-switch-project-shell)))
-
+(setq projectile-enable-idle-timer t)
 
 (provide 'kmt-init)
 ;;; kmt-init.el ends here
