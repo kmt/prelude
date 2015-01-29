@@ -39,6 +39,7 @@
     (define-key map (kbd "C-c g") 'prelude-google)
     (define-key map (kbd "C-c G") 'prelude-github)
     (define-key map (kbd "C-c y") 'prelude-youtube)
+    (define-key map (kbd "C-c U") 'prelude-duckduckgo)
     ;; mimic popular IDEs binding, note that it doesn't work in a terminal session
     (define-key map [(shift return)] 'prelude-smart-open-line)
     (define-key map (kbd "M-o") 'prelude-smart-open-line)
@@ -64,6 +65,8 @@
     (define-key map (kbd "C-c h") 'helm-prelude)
     (define-key map (kbd "C-c +") 'prelude-increment-integer-at-point)
     (define-key map (kbd "C-c -") 'prelude-decrement-integer-at-point)
+    (define-key map (kbd "C-c I") 'prelude-find-user-init-file)
+    (define-key map (kbd "C-c S") 'prelude-find-shell-init-file)
     ;; make some use of the Super key
     (define-key map [?\s-d] 'projectile-find-dir)
     (define-key map [?\s-p] 'projectile-switch-project)
